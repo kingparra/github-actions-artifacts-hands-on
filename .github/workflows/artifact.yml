@@ -27,5 +27,8 @@ jobs:
         uses: actions/download-artifact@v4.1.8
         with:
           name: hello-artifact
+
+      - run: ls -AFX --gr
+
       - name: Cat out file
-        run: cat ./artifacts/hello.txt
+        run: cat hello.txt
