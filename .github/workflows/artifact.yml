@@ -36,7 +36,7 @@ jobs:
           path: ./artifacts/
 
       - name: Get path information
-        run: pwd; ls -alh
+        run: ls -R ../
 
       - name: Cat out file
         run: cat ./artifacts/hello.txt
